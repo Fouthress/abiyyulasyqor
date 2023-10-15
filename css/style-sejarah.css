@@ -203,6 +203,32 @@ li.dropdown2 {
     border-radius: 5px;
 }
 
+.tombol{
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: brown;
+    color: #fff;
+    box-shadow: 0 0px 10px black;
+    cursor: pointer;
+    padding: 15px 15px 10px 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.tombol:hover{
+    background-color: #fff;
+    color: brown;
+}
+
+
 .navbar-bottom{
     font-family: 'Poppins';
     font-size: 10px;
@@ -235,4 +261,14 @@ li.dropdown2 {
 .navigation2 li a:hover{
     color: yellow;
     border-bottom: 3px solid yellow;
+}
+
+.sosial-media{
+    font-size: 40px;
+}
+
+.sosial-media a{
+    text-decoration: none;
+    padding-top: 25px;
+    color: #fff;
 }
