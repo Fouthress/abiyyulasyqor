@@ -3,75 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style-tentang.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-png" href="../image/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style-home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="import" href="/font/Roman SD.ttf">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="import" href="../font/Roman SD.ttf">
     <title>Mesir Kuno</title>
 </head>
-<body>
 
-    <audio hidden autoplay loop>
-        <source src="../audio/audio-loginpage.mp3" type="audio/mp3">
-    </audio>
-    
-    <nav class="container">
-            <div class="home">
-            <a href="home.html"><img src="../image/logo.png" alt="">Mesir Kuno</a>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top position-fixed-top mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../image/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Mesir Kuno
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div>
-                <ul  class="navigation">
-                    <li><a href="home.html">Beranda</a></li>
-                    <li><a href="sejarah.html">Sejarah</a></li>
-                    <li><a href="kontakkami.html">Kontak kami</a></li>
-                    <li class="dropdown2">
-                        <a href="tentang.html">Tentang</a>
-                        <div  class="dropdown-content2">
-                                <a href="tentang.html">Tentang</a>
-                                <a href="../index.html">Log Out</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sejarah.html">Sejarah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakkami.html">Kontak</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang
+                        </a>
+                        <div class="dropdown dropstart">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="tentang.html">Tentang</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Log Out</a></li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
             </div>
-    </nav>
-    <div class="title-header"><h1>Tentang Kami</h1></div>
-    <div class="content">
-        <p>Website ini dibuat untuk memberi pengetahuan tentang Mesir kuno kepada masyarakat luas, serta mengenalkan apa saja yang menjadi kebudayaan pada masa lampau</p>
-        <div class="content-image">
-            <a href="../image/giza.jpg" target="_blank"><img src="../image/giza.jpg" alt=""></a>
+        </nav>
+    </div>
+
+    <div class="container-fluid p-4 my-5">
+        <div class="card p-4 shadow">
+            <h1>Tentang Kami</h1>
+            <div class="row">
+                <div class="col-lg-8 col-xl-9">
+                    <p style="text-align: justify;">
+                        Website ini dibuat untuk memberi pengetahuan tentang Mesir kuno kepada masyarakat luas, serta mengenalkan apa saja yang menjadi kebudayaan pada masa lampau
+                    </p>
+                </div>
+                <div class="col-3 col-lg col-xl-2">
+                    <a href="../image/giza.jpg" target="_blank"><img src="../image/giza.jpg" alt="" width="300" height=""></a>
+                    <p>Piramida Khafre (Dinasti Keempat Mesir) dan Sfinks Agung Giza (± 2500 SM).</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <button id="tombol" class="tombol"><i class='bx bxs-to-top bx-tada' ></i></button>
+    <div class="container-fluid text-center py-3" style="background-color: crimson;">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="my-4">
+                    <a class="navbar-brand fs-3" href="home.html" style="font-family: 'Roman', cursive;">
+                        <img src="../image/logo.png" alt="" width="50" height="auto"
+                            class="d-inline-block align-text-top">
+                        Mesir Kuno
+                    </a>
+                </div>
+                <div class="my-3 fs-2">
+                    <a href="https://wa.me/6281328747579" target=“_blank”><i
+                            class='bx bxl-whatsapp bx-tada text-light'></i></a>
+                    <a href="https://web.facebook.com/muhammad.asyqor/" target=“_blank”><i
+                            class='bx bxl-facebook-circle bx-tada text-light'></i></a>
+                    <a href="https://www.instagram.com/abiyyulasyqor/" target=“_blank”><i
+                            class='bx bxl-instagram bx-tada text-light'></i></a>
+                    <a href="https://youtube.com/channel/UCfDJFlF7EPLNITttdEuz_tw" target=“_blank”><i
+                            class='bx bxl-youtube bx-tada text-light'></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 py-3">
+                <div class="my-4 fs-5">
+                    <h3>Mesir Kuno</h3>
+                    Jl. Kairo, Mesir
+                    <br>WA Admin 0987654321
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <button type="button" class="text-dark bg-light shadow btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class='bx bxs-to-top bx-tada'></i>
+    </button>
     <script src="../javascript/home.js"></script>
 
-    <nav class="navbar">
-        <div class="content3">
-            <div class="navbar-bottom">
-            <br><strong class="mesir">MESIR KUNO </strong>
-            <br>Jl. Kairo, Mesir
-            <br>WA Admin 0987654321
-        </div>
-        
-        <div class="sosial-media">
-            <a href="https://wa.me/6281328747579" target=“_blank”><i class='bx bxl-whatsapp bx-tada' ></i></a>
-            <a href="https://web.facebook.com/muhammad.asyqor/" target=“_blank”><i class='bx bxl-facebook-circle bx-tada' ></i></a>
-            <a href="https://www.instagram.com/abiyyulasyqor/" target=“_blank”><i class='bx bxl-instagram bx-tada' ></i></a>
-            <a href="https://youtube.com/channel/UCfDJFlF7EPLNITttdEuz_tw" target=“_blank”><i class='bx bxl-youtube bx-tada' ></i></a>
-        </div>
-
-        <div class="container2">
-            <ul  class="navigation2">
-                <li><a href="home.html">Beranda</a></li>
-                <li><a href="sejarah.html">Sejarah</a></li>
-                <li><a href="kontakkami.html">Kontak kami</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-            </ul>
-        </div>
-    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

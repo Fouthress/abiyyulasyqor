@@ -1,116 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style-sejarah.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-png" href="../image/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style-home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="import" href="../font/roman.ttf">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="import" href="../font/Roman SD.ttf">
     <title>Mesir Kuno</title>
 </head>
-<body>
 
-    <audio hidden autoplay loop>
-        <source src="../audio/audio-loginpage.mp3" type="audio/mp3">
-    </audio>
-    
-    <nav class="container">
-            <div class="home">
-            <a href="home.html"><img src="../image/logo.png" alt="">Mesir Kuno</a>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top position-fixed-top mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="../image/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Mesir Kuno
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div>
-                <ul  class="navigation">
-                    <li><a href="home.html">Beranda</a></li>
-                    <li><a href="sejarah.html">Sejarah</a></li>
-                    <li><a href="kontakkami.html">Kontak kami</a>
-                    <li class="dropdown2">
-                        <a href="tentang.html">Tentang</a>
-                        <div  class="dropdown-content2">
-                                <a href="tentang.html">Tentang</a>
-                                <a href="../index.html">Log Out</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sejarah.html">Sejarah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakkami.html">Kontak</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tentang
+                        </a>
+                        <div class="dropdown dropstart">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="tentang.html">Tentang</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Log Out</a></li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
             </div>
-    </nav>
+        </nav>
+    </div>
 
-    <div class="title-header"><h1> Sejarah Mesir Kuno</h1></div>
-    <div class="content">
-        <p>Pada akhir masa Paleolitik, iklim Afrika Utara menjadi semakin panas dan kering. Akibatnya, penduduk di wilayah tersebut terpaksa berpusat di sepanjang sungai Nil. Sebelumnya, semenjak manusia pemburu-pengumpul mulai tinggal di wilayah tersebut pada akhir Pleistosen Tengah (sekitar 120 ribu tahun lalu), sungai Nil telah menjadi urat nadi kehidupan Mesir. Dataran banjir Nil yang subur memberikan kesempatan bagi manusia untuk mengembangkan pertanian dan masyarakat yang terpusat dan mutakhir, yang menjadi landasan bagi sejarah peradaban manusia.</p>
-        <div class="content-image">
-            <a href="../image/peta-mesirkuno.svg" target="_blank"><img src="../image/peta-mesirkuno.svg" alt=""></a>
-            <br>Peta Mesir Kuno, menunjukkan kota dan situs utama pada periode dinasti (3150 SM hingga 30 SM)
+    <div class="container-fluid p-4 my-5">
+        <div class="card p-4 shadow">
+            <h1>Sejarah</h1>
+            <div class="row">
+                <div class="col-lg-8 col-xl-9">
+                    <p style="text-align: justify;">Pada akhir masa Paleolitik, iklim Afrika Utara menjadi semakin panas
+                        dan kering. Akibatnya, penduduk di wilayah tersebut terpaksa berpusat di sepanjang sungai Nil.
+                        Sebelumnya, semenjak manusia pemburu-pengumpul mulai tinggal di wilayah tersebut pada akhir
+                        Pleistosen Tengah (sekitar 120 ribu tahun lalu), sungai Nil telah menjadi urat nadi kehidupan
+                        Mesir. Dataran banjir Nil yang subur memberikan kesempatan bagi manusia untuk mengembangkan
+                        pertanian dan masyarakat yang terpusat dan mutakhir, yang menjadi landasan bagi sejarah
+                        peradaban manusia.
+                    </p>
+                </div>
+                <div class="col-3 col-lg col-xl-2">
+                    <a href="../image/peta-mesirkuno.svg" target="_blank"><img src="../image/peta-mesirkuno.svg" alt=""
+                            width="300" height="300"></a>
+                    <br>Peta Mesir Kuno, menunjukkan kota dan situs utama pada periode dinasti (3150 SM hingga 30 SM)
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="content2">
-        <div>
-        <h1>Periode Pradinasti</h1>
-        <p>Pada masa pra dan awal dinasti, iklim Mesir lebih subur daripada saat ini. Sebagian wilayah Mesir ditutupi oleh sabana berhutan dan dilalui oleh ungulata yang merumput. Flora dan fauna lebih produktif dan sungai Nil menopang kehidupan unggas air. Perburuan merupakan salah satu mata pencaharian utama orang Mesir. Selain itu, pada periode ini, banyak hewan yang didomestikasi, termasuk kambing, domba, sapi, keledai, dan unggas.</p>
-        <p>Sekitar tahun 5500 SM, suku-suku kecil yang menetap di lembah sungai Nil telah berkembang menjadi peradaban yang menguasai pertanian dan peternakan. Peradaban mereka juga dapat dikenal melalui tembikar dan barang-barang pribadi, seperti sisir, gelang tangan, dan manik. Peradaban yang terbesar di antara peradaban-peradaban awal adalah Badari di Mesir Hulu, yang dikenal akan keramik, peralatan batu, dan penggunaan tembaga.</p>
-        <p>Di Mesir Utara, Badari diikuti oleh peradaban Amratia dan Gerzia, yang menunjukkan beberapa pengembangan teknologi. Bukti awal menunjukkan adanya hubungan antara Gerzia dengan Kanaan dan pantai Byblos.</p>
-        <p>Sementara itu, di Mesir Selatan, peradaban Naqada, mirip dengan Badari, mulai memperluas kekuasaannya di sepanjang sungai Nil sekitar tahun 4000 SM. Sejak masa Naqada I, orang Mesir pra dinasti mengimpor obsidian dari Ethiopia, untuk membentuk pedang dan benda lain yang terbuat dari flake. Setelah sekitar 1000 tahun, peradaban Naqada berkembang dari masyarakat pertanian yang kecil menjadi peradaban yang kuat. Pemimpin mereka berkuasa penuh atas rakyat dan sumber daya alam lembah sungai Nil. Setelah mendirikan pusat kekuatan di Hierakonpolis, dan lalu di Abydos, penguasa-penguasa Naqada III memperluas kekuasaan mereka ke utara.</p>
-        <p>Budaya Naqada membuat berbagai macam barang-barang material - yang menunjukkan peningkatan kekuasaan dan kekayaan dari para penguasanya - seperti tembikar yang dicat, vas batu dekoratif yang berkualitas tinggi, pelat kosmetik, dan perhiasan yang terbuat dari emas, lapis, dan gading. Mereka juga mengembangkan glasir keramik yang dikenal dengan nama tembikar glasir bening. Pada fase akhir masa pra dinasti, peradaban Naqada mulai menggunakan simbol-simbol tulisan yang akan berkembang menjadi sistem hieroglif untuk menulis bahasa Mesir kuno.</p>
+    <div class="container-fluid p-4 my-5">
+        <div class="card p-4 shadow">
+            <h1>Periode Pradinasti</h1>
+            <div class="row">
+                <div class="col" style="text-align: justify;">
+                    <p>Pada masa pra dan awal dinasti, iklim Mesir lebih subur daripada saat ini. Sebagian wilayah Mesir
+                        ditutupi oleh sabana berhutan dan dilalui oleh ungulata yang merumput. Flora dan fauna lebih
+                        produktif dan sungai Nil menopang kehidupan unggas air. Perburuan merupakan salah satu mata
+                        pencaharian utama orang Mesir. Selain itu, pada periode ini, banyak hewan yang didomestikasi,
+                        termasuk kambing, domba, sapi, keledai, dan unggas.</p>
+                    <p>Sekitar tahun 5500 SM, suku-suku kecil yang menetap di lembah sungai Nil telah berkembang menjadi
+                        peradaban yang menguasai pertanian dan peternakan. Peradaban mereka juga dapat dikenal melalui
+                        tembikar dan barang-barang pribadi, seperti sisir, gelang tangan, dan manik. Peradaban yang
+                        terbesar di antara peradaban-peradaban awal adalah Badari di Mesir Hulu, yang dikenal akan
+                        keramik, peralatan batu, dan penggunaan tembaga.</p>
+                    <p>Di Mesir Utara, Badari diikuti oleh peradaban Amratia dan Gerzia, yang menunjukkan beberapa
+                        pengembangan teknologi. Bukti awal menunjukkan adanya hubungan antara Gerzia dengan Kanaan dan
+                        pantai Byblos.</p>
+                    <p>Sementara itu, di Mesir Selatan, peradaban Naqada, mirip dengan Badari, mulai memperluas
+                        kekuasaannya di sepanjang sungai Nil sekitar tahun 4000 SM. Sejak masa Naqada I, orang Mesir pra
+                        dinasti mengimpor obsidian dari Ethiopia, untuk membentuk pedang dan benda lain yang terbuat
+                        dari flake. Setelah sekitar 1000 tahun, peradaban Naqada berkembang dari masyarakat pertanian
+                        yang kecil menjadi peradaban yang kuat. Pemimpin mereka berkuasa penuh atas rakyat dan sumber
+                        daya alam lembah sungai Nil. Setelah mendirikan pusat kekuatan di Hierakonpolis, dan lalu di
+                        Abydos, penguasa-penguasa Naqada III memperluas kekuasaan mereka ke utara.</p>
+                    <p>Budaya Naqada membuat berbagai macam barang-barang material - yang menunjukkan peningkatan
+                        kekuasaan dan kekayaan dari para penguasanya - seperti tembikar yang dicat, vas batu dekoratif
+                        yang berkualitas tinggi, pelat kosmetik, dan perhiasan yang terbuat dari emas, lapis, dan
+                        gading. Mereka juga mengembangkan glasir keramik yang dikenal dengan nama tembikar glasir
+                        bening. Pada fase akhir masa pra dinasti, peradaban Naqada mulai menggunakan simbol-simbol
+                        tulisan yang akan berkembang menjadi sistem hieroglif untuk menulis bahasa Mesir kuno.</p>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <div class="content2">
-        <div>
+
+    <div class="container-fluid p-4 my-5">
+        <div class="card p-4 shadow">
             <h1>Periode Dinasti Awal</h1>
-        <p>Pendeta Mesir pada abad ke-3 SM, Manetho mengelompokan garis keturunan firaun yang panjang dari Menes ke masanya menjadi 30 dinasti. Sistem ini masih digunakan hingga hari ini.[18] Ia memilih untuk memulai sejarah resminya melalui raja yang bernama "Meni" (atau Menes dalam bahasa Yunani), yang dipercaya telah menyatukan kerajaan Mesir Hulu dan Hilir (sekitar 3200 SM). Transisi menuju negara kesatuan sejatinya berlangsung lebih bertahap, berbeda dengan apa yang ditulis oleh penulis-penulis Mesir Kuno, dan tidak ada catatan kontemporer mengenai Menes. Beberapa ahli kini meyakini bahwa figur "Menes" mungkin merupakan Narmer, yang digambarkan mengenakan tanda kebesaran kerajaan pada pelat Narmer yang merupakan simbol unifikasi.</p>
-        <p>Pada Periode Dinasti Awal, sekitar 3150 SM, firaun pertama memperkuat kekuasaan mereka terhadap Mesir hilir dengan mendirikan ibu kota di Memphis. Dengan ini, firaun dapat mengawasi pekerja, pertanian, dan jalur perdagangan ke Levant yang penting dan menguntungkan. Peningkatan kekuasaan dan kekayaan firaun pada periode dinasti awal dilambangkan melalui mastaba (makam) yang rumit dan struktur-struktur kultus kamar mayat di Abydos, yang digunakan untuk merayakan didewakannya firaun setelah kematiannya. Institusi kerajaan yang kuat dikembangkan oleh firaun untuk mengesahkan kekuasaan negara atas tanah, pekerja, dan sumber daya alam, yang penting bagi pertumbuhan peradaban Mesir kuno.</p>
-        </div>
-        <div class="content-image2">
-            <a href="../image/Vase_with_gazelles-E_28023-_Egypte_louvre_316.jpg" target="_blank"><img src="../image/Vase_with_gazelles-E_28023-_Egypte_louvre_316.jpg" alt=""></a>
-            <br>Guci pada periode pradinasti. <br><br><br><br>
-            <a href="../image/NarmerPalette_ROM-gamma.jpg" target="_blank"><img src="../image/NarmerPalette_ROM-gamma.jpg" alt=""></a>
-            <br>Pelat Narmer menggambarkan penyatuan Mesir Hulu dan Hilir.
+            <div class="row">
+                <div class="col-lg-8 col-xl-9" style="text-align: justify;">
+                    <p>Pendeta Mesir pada abad ke-3 SM, Manetho mengelompokan garis keturunan firaun yang panjang dari Menes ke
+                        masanya menjadi 30 dinasti. Sistem ini masih digunakan hingga hari ini.[18] Ia memilih untuk memulai
+                        sejarah resminya melalui raja yang bernama "Meni" (atau Menes dalam bahasa Yunani), yang dipercaya telah
+                        menyatukan kerajaan Mesir Hulu dan Hilir (sekitar 3200 SM). Transisi menuju negara kesatuan sejatinya
+                        berlangsung lebih bertahap, berbeda dengan apa yang ditulis oleh penulis-penulis Mesir Kuno, dan tidak
+                        ada catatan kontemporer mengenai Menes. Beberapa ahli kini meyakini bahwa figur "Menes" mungkin
+                        merupakan Narmer, yang digambarkan mengenakan tanda kebesaran kerajaan pada pelat Narmer yang merupakan
+                        simbol unifikasi.</p>
+                    <p>Pada Periode Dinasti Awal, sekitar 3150 SM, firaun pertama memperkuat kekuasaan mereka terhadap Mesir
+                        hilir dengan mendirikan ibu kota di Memphis. Dengan ini, firaun dapat mengawasi pekerja, pertanian, dan
+                        jalur perdagangan ke Levant yang penting dan menguntungkan. Peningkatan kekuasaan dan kekayaan firaun
+                        pada periode dinasti awal dilambangkan melalui mastaba (makam) yang rumit dan struktur-struktur kultus
+                        kamar mayat di Abydos, yang digunakan untuk merayakan didewakannya firaun setelah kematiannya. Institusi
+                        kerajaan yang kuat dikembangkan oleh firaun untuk mengesahkan kekuasaan negara atas tanah, pekerja, dan
+                        sumber daya alam, yang penting bagi pertumbuhan peradaban Mesir kuno.</p>
+                </div>
+                <div class="col-3 col-lg col-xl-2">
+                    <a href="../image/Vase_with_gazelles-E_28023-_Egypte_louvre_316.jpg" target="_blank"><img
+                        src="../image/Vase_with_gazelles-E_28023-_Egypte_louvre_316.jpg" alt="" width="300" height="300"></a>
+                <br>Guci pada periode pradinasti. <br><br><br><br>
+                <a href="../image/NarmerPalette_ROM-gamma.jpg" target="_blank"><img
+                        src="../image/NarmerPalette_ROM-gamma.jpg" alt="" width="300" height="300"></a>
+                <br>Pelat Narmer menggambarkan penyatuan Mesir Hulu dan Hilir.
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="content2">
-        <div>
+    <div class="container-fluid p-4 my-5">
+        <div class="card p-4 shadow">
             <h1>Kerajaan Lama</h1>
-            <p>Kemajuan dalam bidang arsitektur, seni, dan teknologi dibuat pada masa Kerajaan Lama. Kemajuan ini didorong oleh meningkatnya produktivitas pertanian, yang dimungkinkan karena pemerintahan pusat dibina dengan baik. Di bawah pengarahan wazir, pejabat-pejabat negara mengumpulkan pajak, mengatur proyek irigasi untuk meningkatkan hasil panen, mengumpulkan petani untuk bekerja di proyek-proyek pembangunan, dan menetapkan sistem keadilan untuk menjaga keamanan. Dengan surplus sumber daya yang ada karena ekonomi yang produktif dan stabil, negara mampu membiayai pembangunan proyek-proyek kolosal dan menugaskan pembuatan karya-karya seni istimewa. Piramida yang dibangun oleh Djoser, Khufu, dan keturunan mereka merupakan simbol peradaban Mesir Kuno yang paling diingat.</p>
-            <p>Seiring dengan meningkatnya kepentingan pemerintah pusat, muncul golongan juru tulis (sesh) dan pejabat berpendidikan, yang diberikan tanah oleh firaun sebagai bayaran atas jasa mereka. Firaun juga memberikan tanah kepada struktur-struktur kultus kamar mayat dan kuil-kuil lokal untuk memastikan bahwa institusi-institusi tersebut memiliki sumber daya yang cukup untuk memuja firaun setelah kematiannya. Pada akhir periode Kerajaan Lama, lima abad berlangsungnya praktik-praktik feudal pelan-pelan mengikis kekuatan ekonomi firaun. Firaun tak lagi mampu membiayai pemerintahan terpusat yang besar. Dengan berkurangnya kekuatan firaun, gubernur regional yang disebut nomark mulai menantang kekuatan firaun. Hal ini diperburuk dengan terjadinya kekeringan besar antara tahun 2200 hingga 2150 SM, sehingga Mesir Kuno memasuki periode kelaparan dan perselisihan selama 140 tahun yang dikenal sebagai Periode Menengah Pertama Mesir.</p>
-        </div>
-        <div class="content-image2">
-            <a href="../image/Menkaura-ColossalStatue_MuseumOfFineArtsBoston.png" target="_blank"><img src="../image/Menkaura-ColossalStatue_MuseumOfFineArtsBoston.png" alt=""></a>
-            <br>Patung firaun Menkaura di Boston Museum of Fine Arts.
+            <div class="row">
+                <div class="col-lg-8 col-xl-9" style="text-align: justify;">
+                    <p>Kemajuan dalam bidang arsitektur, seni, dan teknologi dibuat pada masa Kerajaan Lama. Kemajuan ini
+                        didorong oleh meningkatnya produktivitas pertanian, yang dimungkinkan karena pemerintahan pusat dibina
+                        dengan baik. Di bawah pengarahan wazir, pejabat-pejabat negara mengumpulkan pajak, mengatur proyek
+                        irigasi untuk meningkatkan hasil panen, mengumpulkan petani untuk bekerja di proyek-proyek pembangunan,
+                        dan menetapkan sistem keadilan untuk menjaga keamanan. Dengan surplus sumber daya yang ada karena
+                        ekonomi yang produktif dan stabil, negara mampu membiayai pembangunan proyek-proyek kolosal dan
+                        menugaskan pembuatan karya-karya seni istimewa. Piramida yang dibangun oleh Djoser, Khufu, dan keturunan
+                        mereka merupakan simbol peradaban Mesir Kuno yang paling diingat.</p>
+                    <p>Seiring dengan meningkatnya kepentingan pemerintah pusat, muncul golongan juru tulis (sesh) dan pejabat
+                        berpendidikan, yang diberikan tanah oleh firaun sebagai bayaran atas jasa mereka. Firaun juga memberikan
+                        tanah kepada struktur-struktur kultus kamar mayat dan kuil-kuil lokal untuk memastikan bahwa
+                        institusi-institusi tersebut memiliki sumber daya yang cukup untuk memuja firaun setelah kematiannya.
+                        Pada akhir periode Kerajaan Lama, lima abad berlangsungnya praktik-praktik feudal pelan-pelan mengikis
+                        kekuatan ekonomi firaun. Firaun tak lagi mampu membiayai pemerintahan terpusat yang besar. Dengan
+                        berkurangnya kekuatan firaun, gubernur regional yang disebut nomark mulai menantang kekuatan firaun. Hal
+                        ini diperburuk dengan terjadinya kekeringan besar antara tahun 2200 hingga 2150 SM, sehingga Mesir Kuno
+                        memasuki periode kelaparan dan perselisihan selama 140 tahun yang dikenal sebagai Periode Menengah
+                        Pertama Mesir.</p>
+                </div>
+                <div class="col-3 col-lg col-xl-2">
+                    <a href="../image/Menkaura-ColossalStatue_MuseumOfFineArtsBoston.png" target="_blank"><img
+                        src="../image/Menkaura-ColossalStatue_MuseumOfFineArtsBoston.png" alt="" width="300" height=""></a>
+                <br>Patung firaun Menkaura di Boston Museum of Fine Arts.
+                </div>
+            </div>
         </div>
     </div>
 
-    <button id="tombol" class="tombol"><i class='bx bxs-to-top bx-tada' ></i></button>
+    <div class="container-fluid text-center py-3" style="background-color: crimson;">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="my-4">
+                    <a class="navbar-brand fs-3" href="home.html" style="font-family: 'Roman', cursive;">
+                        <img src="../image/logo.png" alt="" width="50" height="auto"
+                            class="d-inline-block align-text-top">
+                        Mesir Kuno
+                    </a>
+                </div>
+                <div class="my-3 fs-2">
+                    <a href="https://wa.me/6281328747579" target=“_blank”><i
+                            class='bx bxl-whatsapp bx-tada text-light'></i></a>
+                    <a href="https://web.facebook.com/muhammad.asyqor/" target=“_blank”><i
+                            class='bx bxl-facebook-circle bx-tada text-light'></i></a>
+                    <a href="https://www.instagram.com/abiyyulasyqor/" target=“_blank”><i
+                            class='bx bxl-instagram bx-tada text-light'></i></a>
+                    <a href="https://youtube.com/channel/UCfDJFlF7EPLNITttdEuz_tw" target=“_blank”><i
+                            class='bx bxl-youtube bx-tada text-light'></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 py-3">
+                <div class="my-4 fs-5">
+                    <h3>Mesir Kuno</h3>
+                    Jl. Kairo, Mesir
+                    <br>WA Admin 0987654321
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <button type="button" class="text-dark bg-light shadow btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class='bx bxs-to-top bx-tada'></i>
+    </button>
     <script src="../javascript/home.js"></script>
 
-    <nav class="navbar">
-        <div class="content3">
-            <div class="navbar-bottom">
-            <br><strong class="mesir">MESIR KUNO </strong>
-            <br>Jl. Kairo, Mesir
-            <br>WA Admin 0987654321
-        </div>
-        
-        <div class="sosial-media">
-            <a href="https://wa.me/6281328747579" target=“_blank”><i class='bx bxl-whatsapp bx-tada' ></i></a>
-            <a href="https://web.facebook.com/muhammad.asyqor/" target=“_blank”><i class='bx bxl-facebook-circle bx-tada' ></i></a>
-            <a href="https://www.instagram.com/abiyyulasyqor/" target=“_blank”><i class='bx bxl-instagram bx-tada' ></i></a>
-            <a href="https://youtube.com/channel/UCfDJFlF7EPLNITttdEuz_tw" target=“_blank”><i class='bx bxl-youtube bx-tada' ></i></a>
-        </div>
-
-        <div class="container2">
-            <ul  class="navigation2">
-                <li><a href="home.html">Beranda</a></li>
-                <li><a href="sejarah.html">Sejarah</a></li>
-                <li><a href="kontakkami.html">Kontak kami</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
-            </ul>
-        </div>
-    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
